@@ -14,7 +14,7 @@ public class Main_Run {
      * Created by User15 on 27.07.2017.
      */
 
-        public static void saveUrl(final String filename, final String urlString) //1мплшпрллеш2про3
+        public static void saveUrl(final String filename, final String urlString)
                 throws MalformedURLException, IOException {
             BufferedInputStream in = null;
             FileOutputStream fout = null;
