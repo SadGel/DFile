@@ -22,10 +22,14 @@ public class Main_Run {
                 in = new BufferedInputStream(new URL(urlString).openStream());
                 fout = new FileOutputStream(filename);
 
-                final byte data[] = new byte[100];
+                final byte data[] = new byte[1024];
                 int count;
+                int i=0;
                 while ((count = in.read(data, 0, 1024)) != -1) {
+                    i++;
                     fout.write(data, 0, count);
+                    System.out.println(i);
+                    System.out.println(count);
                 }
             } finally {
                 if (in != null) {
